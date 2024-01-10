@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urls xmlns="http://www.struggle.com/urls"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.struggle.com/urls http://www.struggle.com/urls/urls.xsd"
+      type="TEST" namespace="org.example.mapper.TestUrlMapper">
+
+    <!--  模块描述  -->
+    <description>TEST</description>
+
+
+    <!--  请求信息  -->
+    <url id="test" request-method="GET">
+        <description>百度首页</description>
+        <request-url>https://www.baidu.com/</request-url>
+            <!--   请求头信息     -->
+<!--        <heads>-->
+<!--            <head key="Content-Type" value="multipart/form-data"/>-->
+<!--        </heads>-->
+        <!--请求参数-->
+<!--        <params>-->
+<!--            <property key="grant_type" value="${erp.grantType}"/>-->
+<!--            <property key="client_id" value="${erp.clientId}"/>-->
+<!--            <property key="client_secret" value="${erp.clientSecret}"/>-->
+<!--        </params>-->
+        <!--   响应数据：元素body表示只返回data属性下的数据     -->
+        <response-body>
+            <body>data</body>
+        </response-body>
+    </url>
+</urls>
